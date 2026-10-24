@@ -65,7 +65,7 @@ Every log line starts with `[CamelCavalry]`. When a campaign loads, the log list
 
 ## Compatibility
 
-- **Castle Market Towns:** compatible. Castles whose villages are horse farms also stock the camels those farms breed.
+- **[Castle Market Towns][cmt]:** compatible. Castles whose villages are horse farms also stock the camels those farms breed.
 - **Not compatible** with [Camel Cataphracts BM168][cataphracts] (`Camel_Cataphracts_BM168`), which contains an old override of the vanilla Mamluke Regular. Camel Cavalry declares it incompatible, so the launcher warns about the conflict. The armor-only [Camel Armor BM168][bm168] is the one this mod needs.
 - **Troop tree overhauls** that replace the Aserai Mamluke Regular or the Khuzait Qanqli: if such a mod loads after Camel Cavalry, the camel branch disappears and the game log warns about it. If it loads before, the branch is added to its version of the troop. Total conversions without the Aserai or Khuzait cultures leave the branches nothing to attach to.
 - **Possible conflicts:** mods that overhaul the party screen or troop upgrades may bypass the exact camel rule, so any horse counts. Mods that rebuild village production or workshop production may remove the camels from Khuzait horse farms or the camel armor from Khuzait towns. Mods that edit or replace the [Camel Armor BM168][bm168] items may undo their market category and prices. The chance is low, and such conflicts disable a feature rather than crash the game. Please report them on [GitHub][issues].
@@ -160,6 +160,7 @@ Mount & Blade II: Bannerlord is a trademark of TaleWorlds Entertainment. This pr
 
 [bm168]: https://www.nexusmods.com/mountandblade2bannerlord/mods/4852
 [cataphracts]: https://www.nexusmods.com/mountandblade2bannerlord/mods/4853
+[cmt]: https://www.nexusmods.com/mountandblade2bannerlord/mods/14182
 [camelriders]: https://www.nexusmods.com/mountandblade2bannerlord/mods/2802
 [harmony]: https://www.nexusmods.com/mountandblade2bannerlord/mods/2006?tab=description
 [blse]: https://www.nexusmods.com/mountandblade2bannerlord/mods/1?tab=description
