@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+	<!-- Tier 4. Branches from the vanilla aserai_mameluke_regular through XSLT/camel_cavalry_troop_branch.xslt. -->
+	<NPCCharacter
+		id="camel_cavalry_aserai_camel_rider"
+		default_group="Cavalry"
+		level="21"
+		name="{=cmlcav_rider_name}Aserai Camel Rider"
+		upgrade_requires="ItemCategory.horse"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_aserai_mamluke" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="50" />
+			<skill
+				id="Riding"
+				value="100" />
+			<skill
+				id="OneHanded"
+				value="90" />
+			<skill
+				id="TwoHanded"
+				value="40" />
+			<skill
+				id="Polearm"
+				value="100" />
+			<skill
+				id="Bow"
+				value="50" />
+			<skill
+				id="Crossbow"
+				value="15" />
+			<skill
+				id="Throwing"
+				value="70" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target
+				id="NPCCharacter.camel_cavalry_aserai_camel_lancer" />
+			<upgrade_target
+				id="NPCCharacter.camel_cavalry_aserai_camel_archer" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.southern_spear_3_t3" />
+				<equipment
+					slot="Item1"
+					id="Item.desert_round_shield" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_3_t3" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.desert_helmet_with_mail" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_b" />
+				<equipment
+					slot="Leg"
+					id="Item.strapped_mail_chausses" />
+				<equipment
+					slot="Gloves"
+					id="Item.rough_tied_bracers" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_d" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.southern_spear_3_t3" />
+				<equipment
+					slot="Item1"
+					id="Item.bound_adarga" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_3_t3" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.desert_helmet_with_mail" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_b" />
+				<equipment
+					slot="Leg"
+					id="Item.strapped_mail_chausses" />
+				<equipment
+					slot="Gloves"
+					id="Item.rough_tied_bracers" />
+				<equipment
+					slot="Cape"
+					id="Item.wrapped_scarf" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.southern_spear_3_t3" />
+				<equipment
+					slot="Item1"
+					id="Item.desert_round_shield" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_3_t3" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.desert_helmet_with_mail" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_b" />
+				<equipment
+					slot="Leg"
+					id="Item.strapped_mail_chausses" />
+				<equipment
+					slot="Gloves"
+					id="Item.rough_tied_bracers" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_d" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_saddle" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="aserai_troop_civilian_template_t3"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+
+	<!-- Tier 5 melee. -->
+	<NPCCharacter
+		id="camel_cavalry_aserai_camel_lancer"
+		default_group="Cavalry"
+		level="26"
+		name="{=cmlcav_lancer_name}Aserai Camel Lancer"
+		upgrade_requires="ItemCategory.war_horse"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_aserai_mamluke" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="70" />
+			<skill
+				id="Riding"
+				value="140" />
+			<skill
+				id="OneHanded"
+				value="120" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="140" />
+			<skill
+				id="Bow"
+				value="40" />
+			<skill
+				id="Crossbow"
+				value="20" />
+			<skill
+				id="Throwing"
+				value="80" />
+		</skills>
+		<upgrade_targets></upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.aserai_camel_lance_1" />
+				<equipment
+					slot="Item1"
+					id="Item.large_adarga" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_4_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.emirs_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_a" />
+				<equipment
+					slot="Leg"
+					id="Item.plated_strip_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.reinforced_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_b" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_scale_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.aserai_camel_lance_1" />
+				<equipment
+					slot="Item1"
+					id="Item.studded_adarga" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_5_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.brass_aserai_helmet_b_open" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_scale_armor_on_chain" />
+				<equipment
+					slot="Leg"
+					id="Item.strapped_mail_chausses" />
+				<equipment
+					slot="Gloves"
+					id="Item.mail_mitten_f" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_b" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.eastern_spear_4_t4" />
+				<equipment
+					slot="Item1"
+					id="Item.large_adarga" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_4_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.eastern_javelin_3_t4" />
+				<equipment
+					slot="Head"
+					id="Item.emirs_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_a" />
+				<equipment
+					slot="Leg"
+					id="Item.plated_strip_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.reinforced_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_b" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_scale_armor_1" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="aserai_troop_civilian_template_t3"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+
+	<!-- Tier 5 mounted ranged, modelled on the vanilla Mamluke Heavy Cavalry. -->
+	<NPCCharacter
+		id="camel_cavalry_aserai_camel_archer"
+		default_group="HorseArcher"
+		level="26"
+		name="{=cmlcav_archer_name}Aserai Camel Archer"
+		upgrade_requires="ItemCategory.war_horse"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_aserai_mamluke" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="70" />
+			<skill
+				id="Riding"
+				value="130" />
+			<skill
+				id="OneHanded"
+				value="100" />
+			<skill
+				id="TwoHanded"
+				value="40" />
+			<skill
+				id="Polearm"
+				value="60" />
+			<skill
+				id="Bow"
+				value="130" />
+			<skill
+				id="Crossbow"
+				value="20" />
+			<skill
+				id="Throwing"
+				value="70" />
+		</skills>
+		<upgrade_targets></upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.piercing_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_4_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.large_adarga" />
+				<equipment
+					slot="Head"
+					id="Item.emirs_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_a" />
+				<equipment
+					slot="Leg"
+					id="Item.plated_strip_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.reinforced_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_b" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.piercing_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_4_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.large_adarga" />
+				<equipment
+					slot="Head"
+					id="Item.desert_helmet_with_mail" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_a" />
+				<equipment
+					slot="Leg"
+					id="Item.strapped_mail_chausses" />
+				<equipment
+					slot="Gloves"
+					id="Item.reinforced_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_d" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1b" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.piercing_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.aserai_sword_4_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.large_adarga" />
+				<equipment
+					slot="Head"
+					id="Item.emirs_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.aserai_chain_plate_armor_a" />
+				<equipment
+					slot="Leg"
+					id="Item.plated_strip_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.reinforced_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.a_aserai_scale_b_shoulder_b" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="aserai_troop_civilian_template_t3"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<!-- Tier 4. Branches from the vanilla khuzait_qanqli next to the vanilla Torguud through XSLT/camel_cavalry_troop_branch.xslt. -->
+	<NPCCharacter
+		id="camel_cavalry_khuzait_camel_torguud"
+		default_group="HorseArcher"
+		level="21"
+		name="{=cmlcav_ktorguud_name}Khuzait Camel Torguud"
+		upgrade_requires="ItemCategory.horse"
+		occupation="Soldier"
+		culture="Culture.khuzait">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_khuzait_noble" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="45" />
+			<skill
+				id="Riding"
+				value="100" />
+			<skill
+				id="OneHanded"
+				value="55" />
+			<skill
+				id="TwoHanded"
+				value="45" />
+			<skill
+				id="Polearm"
+				value="100" />
+			<skill
+				id="Bow"
+				value="100" />
+			<skill
+				id="Crossbow"
+				value="15" />
+			<skill
+				id="Throwing"
+				value="25" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target
+				id="NPCCharacter.camel_cavalry_khuzait_camel_kheshig" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.steppe_heavy_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.plumed_nomad_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.leather_lamellar_armor" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.studded_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.leather_lamellar_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.steppe_heavy_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.plumed_nomad_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.leather_lamellar_armor" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.studded_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.leather_lamellar_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_saddle" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.steppe_heavy_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.nomad_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.leather_lamellar_armor" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.studded_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.leather_lamellar_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_chainmail_armor_1" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="khuzait_troop_civilian_template_t2"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<!-- Tier 5 horse archer. -->
+	<NPCCharacter
+		id="camel_cavalry_khuzait_camel_kheshig"
+		default_group="HorseArcher"
+		level="26"
+		name="{=cmlcav_kkheshig_name}Khuzait Camel Kheshig"
+		upgrade_requires="ItemCategory.war_horse"
+		occupation="Soldier"
+		culture="Culture.khuzait">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_khuzait_noble" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="80" />
+			<skill
+				id="Riding"
+				value="130" />
+			<skill
+				id="OneHanded"
+				value="50" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="130" />
+			<skill
+				id="Bow"
+				value="160" />
+			<skill
+				id="Crossbow"
+				value="20" />
+			<skill
+				id="Throwing"
+				value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target
+				id="NPCCharacter.camel_cavalry_khuzait_heavy_camel_archer" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.steppe_war_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.khuzait_lamellar_strapped" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.eastern_studded_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.steppe_war_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.khuzait_lamellar_strapped" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.eastern_studded_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1b" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_sword_2_t3" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet" />
+				<equipment
+					slot="Body"
+					id="Item.khuzait_lamellar_strapped" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.eastern_studded_shoulders" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_scale_armor_1" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="khuzait_troop_civilian_template_t3"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<!-- Tier 6 horse archer next to the vanilla Khan's Guard: its skills and rider gear, on a war camel in the heaviest camel armor.
+	     No upgrade item, as for the Khan's Guard, because the Camel Kheshig already rides a war camel. -->
+	<NPCCharacter
+		id="camel_cavalry_khuzait_heavy_camel_archer"
+		default_group="HorseArcher"
+		level="31"
+		name="{=cmlcav_kheavy_name}Khuzait Heavy Camel Archer"
+		occupation="Soldier"
+		culture="Culture.khuzait">
+		<face>
+			<face_key_template
+				value="BodyProperty.fighter_khuzait_noble" />
+		</face>
+		<skills>
+			<skill
+				id="Athletics"
+				value="60" />
+			<skill
+				id="Riding"
+				value="200" />
+			<skill
+				id="OneHanded"
+				value="60" />
+			<skill
+				id="TwoHanded"
+				value="60" />
+			<skill
+				id="Polearm"
+				value="200" />
+			<skill
+				id="Bow"
+				value="200" />
+			<skill
+				id="Crossbow"
+				value="25" />
+			<skill
+				id="Throwing"
+				value="30" />
+		</skills>
+		<upgrade_targets></upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet_with_facemask" />
+				<equipment
+					slot="Body"
+					id="Item.brass_lamellar_over_mail" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.brass_lamellar_shoulder_white" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet_with_facemask" />
+				<equipment
+					slot="Body"
+					id="Item.brass_lamellar_over_mail" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.brass_lamellar_shoulder_white" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1b" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment
+					slot="Item0"
+					id="Item.composite_steppe_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item2"
+					id="Item.steppe_arrows" />
+				<equipment
+					slot="Item3"
+					id="Item.khuzait_polearm_1_t4" />
+				<equipment
+					slot="Head"
+					id="Item.spiked_helmet_with_facemask" />
+				<equipment
+					slot="Body"
+					id="Item.brass_lamellar_over_mail" />
+				<equipment
+					slot="Leg"
+					id="Item.khuzait_curved_boots" />
+				<equipment
+					slot="Gloves"
+					id="Item.eastern_plated_leather_vambraces" />
+				<equipment
+					slot="Cape"
+					id="Item.brass_lamellar_shoulder_white" />
+				<equipment
+					slot="Horse"
+					id="Item.war_camel" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.camel_lamellar_armor_1" />
+			</EquipmentRoster>
+			<EquipmentSet
+				id="khuzait_troop_civilian_template_t3"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

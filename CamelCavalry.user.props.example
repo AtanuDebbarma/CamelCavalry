@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copy this file to CamelCavalry.user.props and edit it. That copy is ignored by git. -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- Folder that contains bin\Win64_Shipping_Client\Bannerlord.exe. Escape & as &amp;.
+         Not needed when this project is inside <game>\Modules\CamelCavalry. -->
+    <BannerlordDir>C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</BannerlordDir>
+
+    <!-- true copies SubModule.xml, ModuleData and the DLL into the game's Modules\CamelCavalry folder after each build. -->
+    <DeployToGame>false</DeployToGame>
+  </PropertyGroup>
+</Project>

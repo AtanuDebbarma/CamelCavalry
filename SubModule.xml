@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value="Camel Cavalry"/>
+	<Id value="CamelCavalry"/>
+	<Version value="v1.0.0"/>
+	<DefaultModule value="false"/>
+	<ModuleCategory value="Singleplayer"/>
+	<ModuleType value="Community"/>
+	<Official value="false"/>
+	<DependedModules>
+		<DependedModule Id="Native" DependentVersion="v1.4.8"/>
+		<DependedModule Id="SandBoxCore" DependentVersion="v1.4.8"/>
+		<DependedModule Id="Sandbox" DependentVersion="v1.4.8"/>
+		<DependedModule Id="Camel_Armors_BM168" DependentVersion="v1.0.1"/>
+		<DependedModule Id="CustomBattle" Optional="true"/>
+		<DependedModule Id="StoryMode" Optional="true"/>
+		<DependedModule Id="NavalDLC" Optional="true"/>
+		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.4.2.248"/>
+	</DependedModules>
+	<DependedModuleMetadatas>
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="v1.4.8"/>
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="v1.4.8"/>
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="v1.4.8"/>
+		<DependedModuleMetadata id="Camel_Armors_BM168" order="LoadBeforeThis" version="v1.0.1"/>
+		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true"/>
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" optional="true"/>
+		<DependedModuleMetadata id="NavalDLC" order="LoadBeforeThis" optional="true"/>
+		<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.4.2.248"/>
+		<DependedModuleMetadata id="Camel_Cataphracts_BM168" incompatible="true"/>
+	</DependedModuleMetadatas>
+	<IncompatibleModules>
+		<Module Id="Camel_Cataphracts_BM168"/>
+	</IncompatibleModules>
+	<SubModules>
+		<SubModule>
+			<Name value="CamelCavalry"/>
+			<DLLName value="CamelCavalry.dll"/>
+			<SubModuleClassType value="CamelCavalry.CamelCavalrySubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value="none"/>
+				<Tag key="IsNoRenderModeElement" value="false"/>
+			</Tags>
+		</SubModule>
+	</SubModules>
+	<Xmls>
+		<XmlNode>
+			<XmlName id="Items" path="XSLT/camel_cavalry_items"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="camel_cavalry_characters"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="XSLT/camel_cavalry_troop_branch"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+	</Xmls>
+</Module>

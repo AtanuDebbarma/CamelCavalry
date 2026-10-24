@@ -1,0 +1,16 @@
+# Changelog
+
+## 1.0.0
+
+First public version, tested with Bannerlord 1.4.8, War Sails 1.2.8, Harmony 2.4.2 and [Camel Armor BM168](https://www.nexusmods.com/mountandblade2bannerlord/mods/4852) 1.0.1.
+
+- New Aserai troops: Camel Rider (tier 4, camel), Camel Lancer (tier 5 melee, war camel) and Camel Archer (tier 5 horse archer, war camel), balanced against the vanilla Mamluke and Faris troops. Like the vanilla Faris, the Camel Rider and Camel Lancer carry javelins; like the vanilla Heavy Mamluke, the Camel Archer carries a sword and a large adarga shield with one quiver. The vanilla Mamluke Regular gains Camel Rider as a second upgrade; its stats, equipment and vanilla upgrade are unchanged.
+- New Khuzait troops: Camel Torguud (tier 4 horse archer, camel) and Camel Kheshig (tier 5 horse archer, war camel), with the vanilla Torguud and Kheshig skills and gear, and the elite Heavy Camel Archer (tier 6 horse archer), with the vanilla Khan's Guard's skills and gear on a war camel in lamellar camel armor. The vanilla Qanqli gains Camel Torguud as a second upgrade. Like the Khan's Guard upgrade, the Heavy Camel Archer upgrade needs no item.
+- Exact mount rules: Camel Rider and Camel Torguud need a camel, and the tier 5 camel troops need a war camel; other horses and war horses do not count for them. This covers the party screen count, tooltips, upgrade check and its "item needed" message, the mount used up, the upgrade pop-up and the troop upgrade model. AI upgrades follow the base game's rules.
+- Requires [Camel Armor BM168](https://www.nexusmods.com/mountandblade2bannerlord/mods/4852) by BestMods168 for the four camel armors and the camel lance. None of its files are included. At load time their market category, price and merchandise flag are set so markets handle them like other harness and weapons, and a duplicate empty `<Flags />` element is removed from the four armors.
+- Khuzait horse farms also breed camels (0.3 a day), war camels (0.08) and a few pack camels (0.1) on top of their vanilla horses; Aserai horse farms are unchanged.
+- Khuzait town workshops can also make the four camel armors, so Khuzait players can buy harness for their camels; other towns are unchanged.
+- The patches apply all together or not at all, with a log message and an in-game warning when they cannot.
+- A load-time report in the game log of the camel troops, the Mamluke Regular's and Qanqli's upgrades, the camel armor items and the horse farm production, plus a weekly count of camel troops in AI parties and garrisons.
+- Opt-in removal mode: with `prepare_removal.txt` in the module folder, loading a save converts every camel troop (parties, garrisons, prisoners, dungeons, volunteers, issue troops sent out or returning, alley guards, siege break-in casualties) and all nine [Camel Armor BM168](https://www.nexusmods.com/mountandblade2bannerlord/mods/4852) items (four armors, one lance and four Camel Cataphract mount sizes) to vanilla equivalents. It covers inventories, stashes, workshop warehouses and hero equipment, names any place it could not reach, and repeats daily and before each save, so the save can then stop loading both modules.
+- Declared incompatible with [Camel Cataphracts BM168](https://www.nexusmods.com/mountandblade2bannerlord/mods/4853), which overrides the vanilla Mamluke Regular.

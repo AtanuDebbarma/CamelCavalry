@@ -1,0 +1,34 @@
+# Build output
+bin/
+obj/
+
+# Camel Armor BM168 owns these files; they are never copied or committed here
+AssetPackages/
+RuntimeDataCache/
+ModuleData/camel_armors.xml
+ModuleData/camel_cavalry_items.xml
+ModuleData/cloth_bodies.xml
+ModuleData/cloth_materials.xml
+
+# Removal-mode trigger; it must never ship enabled
+prepare_removal.txt
+
+# Local build settings
+*.user.props
+*.user
+*.suo
+
+# IDE folders
+.vs/
+.vscode/
+.idea/
+
+# Release archives
+*.zip
+*.7z
+*.rar
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,34 @@
+Camel Cavalry
+Copyright (C) 2026 AtanuDebbarma
+https://github.com/AtanuDebbarma/CamelCavalry
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. The full license text is in the LICENSE file.
+
+ADDITIONAL TERMS UNDER SECTION 7(b) OF THE GNU GPL VERSION 3
+
+If you convey this program, or any work based on it in whole or in part, you
+must keep the following author attribution in the source code and in the
+documentation distributed with that work (for example its README or
+description):
+
+    Based on Camel Cavalry by AtanuDebbarma
+    https://github.com/AtanuDebbarma/CamelCavalry
+
+REQUIRED THIRD-PARTY MOD
+
+Camel Cavalry requires Camel Armor BM168 by BestMods168:
+https://www.nexusmods.com/mountandblade2bannerlord/mods/4852
+
+None of its files (meshes, textures, asset packages, runtime data, cloth data
+or item definitions) are part of this program or covered by this license.
+They stay the property of their author and must be downloaded from the page
+above. Camel Cavalry only refers to its items by ID, as that mod's permissions
+allow.
+
+REQUEST FOR CREDIT
+
+If this project inspired your own work without you copying its code, a credit
+and a link to the repository above are kindly requested and appreciated.

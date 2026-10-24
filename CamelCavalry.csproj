@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Local settings such as the game folder go in CamelCavalry.user.props, which git ignores. -->
+  <Import Project="CamelCavalry.user.props" Condition="Exists('CamelCavalry.user.props')" />
+
+  <PropertyGroup>
+    <BannerlordDir Condition="'$(BannerlordDir)' == ''">$(BANNERLORD_DIR)</BannerlordDir>
+    <!-- A project inside <game>\Modules\CamelCavalry finds the game two folders up. -->
+    <BannerlordDir Condition="'$(BannerlordDir)' == '' And Exists('$(MSBuildThisFileDirectory)..\..\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll')">$(MSBuildThisFileDirectory)..\..\</BannerlordDir>
+    <BannerlordDir Condition="'$(BannerlordDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</BannerlordDir>
+    <BannerlordRoot>$(BannerlordDir)</BannerlordRoot>
+    <BannerlordRoot Condition="!HasTrailingSlash('$(BannerlordRoot)')">$(BannerlordRoot)\</BannerlordRoot>
+    <BannerlordBin>$(BannerlordRoot)bin\Win64_Shipping_Client\</BannerlordBin>
+    <BannerlordModules>$(BannerlordRoot)Modules\</BannerlordModules>
+    <DeployToGame Condition="'$(DeployToGame)' == ''">false</DeployToGame>
+    <DeployDir>$(BannerlordModules)CamelCavalry\</DeployDir>
+
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+    <ProjectGuid>{3B8E5C21-9A47-4D6F-8E12-5C7A0B4D9E68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CamelCavalry</RootNamespace>
+    <AssemblyName>CamelCavalry</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>5</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>true</Optimize>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Deterministic>true</Deterministic>
+    <OutputPath>bin\Win64_Shipping_Client\</OutputPath>
+    <IntermediateOutputPath>obj\</IntermediateOutputPath>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <!-- Machines without the .NET Framework 4.7.2 targeting pack build against the installed runtime instead. -->
+  <PropertyGroup Condition="!Exists('$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\$(TargetFrameworkVersion)\mscorlib.dll')">
+    <FrameworkPathOverride>$(WINDIR)\Microsoft.NET\Framework64\v4.0.30319</FrameworkPathOverride>
+    <BypassFrameworkInstallChecks>true</BypassFrameworkInstallChecks>
+    <NetStandardPath>$(FrameworkPathOverride)\netstandard.dll</NetStandardPath>
+    <ValueTuplePath>$(FrameworkPathOverride)\System.ValueTuple.dll</ValueTuplePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(NetStandardPath)' == ''">
+    <NetStandardPath>$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\$(TargetFrameworkVersion)\Facades\netstandard.dll</NetStandardPath>
+  </PropertyGroup>
+  <!-- The game assemblies expose ValueTuple through this facade; at runtime it forwards to mscorlib. -->
+  <PropertyGroup Condition="'$(ValueTuplePath)' == ''">
+    <ValueTuplePath>$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\$(TargetFrameworkVersion)\Facades\System.ValueTuple.dll</ValueTuplePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="netstandard">
+      <HintPath>$(NetStandardPath)</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>$(ValueTuplePath)</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade">
+      <HintPath>$(BannerlordBin)TaleWorlds.MountAndBlade.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem">
+      <HintPath>$(BannerlordBin)TaleWorlds.CampaignSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
+      <HintPath>$(BannerlordBin)TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Core">
+      <HintPath>$(BannerlordBin)TaleWorlds.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Core.ViewModelCollection">
+      <HintPath>$(BannerlordBin)TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>$(BannerlordBin)TaleWorlds.Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Localization">
+      <HintPath>$(BannerlordBin)TaleWorlds.Localization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.ObjectSystem">
+      <HintPath>$(BannerlordBin)TaleWorlds.ObjectSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.SaveSystem">
+      <HintPath>$(BannerlordBin)TaleWorlds.SaveSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BannerlordModules)Bannerlord.Harmony\bin\Win64_Shipping_Client\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="SubModule.xml" />
+    <ModuleData Include="ModuleData\**\*.xml;ModuleData\**\*.xslt" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+  <Target Name="CheckBannerlordDir" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(BannerlordBin)TaleWorlds.CampaignSystem.dll')" Text="Bannerlord was not found in '$(BannerlordDir)'. Set BannerlordDir in CamelCavalry.user.props, set the BANNERLORD_DIR environment variable, or pass /p:BannerlordDir=&quot;...&quot;." />
+    <Error Condition="!Exists('$(BannerlordModules)Bannerlord.Harmony\bin\Win64_Shipping_Client\0Harmony.dll')" Text="Harmony was not found in '$(BannerlordModules)Bannerlord.Harmony'. Install the Harmony module before building." />
+  </Target>
+
+  <Target Name="DeployToGame" AfterTargets="Build" Condition="'$(DeployToGame)' == 'true'">
+    <PropertyGroup>
+      <ProjectFullDir>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ProjectFullDir>
+      <DeployFullDir>$([System.IO.Path]::GetFullPath('$(DeployDir)'))</DeployFullDir>
+      <DeployIsProject>false</DeployIsProject>
+      <DeployIsProject Condition="'$(ProjectFullDir.ToLowerInvariant())' == '$(DeployFullDir.ToLowerInvariant())'">true</DeployIsProject>
+    </PropertyGroup>
+    <Copy Condition="'$(DeployIsProject)' != 'true'" SourceFiles="SubModule.xml" DestinationFolder="$(DeployDir)" />
+    <Copy Condition="'$(DeployIsProject)' != 'true'" SourceFiles="@(ModuleData)" DestinationFiles="@(ModuleData->'$(DeployDir)ModuleData\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy Condition="'$(DeployIsProject)' != 'true'" SourceFiles="$(TargetPath)" DestinationFolder="$(DeployDir)bin\Win64_Shipping_Client\" />
+    <Message Importance="high" Condition="'$(DeployIsProject)' != 'true'" Text="Deployed Camel Cavalry to $(DeployDir)" />
+    <Message Importance="high" Condition="'$(DeployIsProject)' == 'true'" Text="This project is the installed module, so nothing was deployed." />
+  </Target>
+</Project>
