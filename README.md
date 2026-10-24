@@ -153,7 +153,7 @@ Camel Cavalry is free software under the [GNU General Public License v3.0](LICEN
 The license covers Camel Cavalry's own code and XML only. Credits:
 
 - **[BestMods168][bestmods168]**, [Camel Armor BM168][bm168]: the camel armor meshes, textures, cloth data and items this mod requires. Its author allows it to be used as a dependency; its files are not redistributed here and must be downloaded from its page.
-- **tannesxam**, [Camel Riders][camelriders]: troop ideas.
+- **[tannesxam][tannesxam]**, [Camel Riders][camelriders]: troop ideas.
 - **TaleWorlds Entertainment:** the vanilla camels, war camels and troop equipment.
 
 Mount & Blade II: Bannerlord is a trademark of TaleWorlds Entertainment. This project is not affiliated with or endorsed by TaleWorlds.
@@ -163,6 +163,7 @@ Mount & Blade II: Bannerlord is a trademark of TaleWorlds Entertainment. This pr
 [cataphracts]: https://www.nexusmods.com/mountandblade2bannerlord/mods/4853
 [cmt]: https://www.nexusmods.com/mountandblade2bannerlord/mods/14182
 [camelriders]: https://www.nexusmods.com/mountandblade2bannerlord/mods/2802
+[tannesxam]: https://www.nexusmods.com/profile/tannesxam?gameId=3174
 [harmony]: https://www.nexusmods.com/mountandblade2bannerlord/mods/2006?tab=description
 [blse]: https://www.nexusmods.com/mountandblade2bannerlord/mods/1?tab=description
 [repo]: https://github.com/AtanuDebbarma/CamelCavalry
