@@ -2,6 +2,8 @@
 
 A Mount & Blade II: Bannerlord mod that adds camel cavalry branches to the Aserai and Khuzait troop trees, next to their vanilla cavalry. Nothing in the vanilla troop trees is replaced.
 
+**[Nexus Mod URL](https://www.nexusmods.com/mountandblade2bannerlord/mods/14240)**
+
 ## Why this mod exists
 
 Camels and war camels are in the base game: Aserai horse farms breed them and markets sell them. Yet only a few minor-faction troops ride them, and neither the Aserai nor the Khuzait troop tree has any camel cavalry.
