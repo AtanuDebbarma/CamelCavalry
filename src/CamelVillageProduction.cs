@@ -31,7 +31,9 @@ namespace CamelCavalry
         internal static bool Apply(Harmony harmony)
         {
             ConstructorInfo constructor = AccessTools.DeclaredConstructor(typeof(DefaultVillageTypes), Type.EmptyTypes);
-            _steppeRanchGetter = AccessTools.PropertyGetter(typeof(DefaultVillageTypes), "VillageTypeSteppeHorseRanch");
+            // 1.5.7 renamed VillageTypeSteppeHorseRanch -> SteppeHorseRanch; keep the old name as fallback.
+            _steppeRanchGetter = AccessTools.PropertyGetter(typeof(DefaultVillageTypes), "SteppeHorseRanch")
+                ?? AccessTools.PropertyGetter(typeof(DefaultVillageTypes), "VillageTypeSteppeHorseRanch");
             _productionsField = AccessTools.DeclaredField(typeof(VillageType), "_productions");
             if (constructor == null || _steppeRanchGetter == null || _steppeRanchGetter.ReturnType != typeof(VillageType)
                 || _productionsField == null || _productionsField.FieldType != typeof(MBList<ValueTuple<ItemObject, float>>))

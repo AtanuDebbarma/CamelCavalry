@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Targets Bannerlord **1.5.7** / War Sails **1.3.7**.
+- Khuzait horse-farm camel breeding resolves `DefaultVillageTypes.SteppeHorseRanch` (1.5.7 rename), with the old `VillageTypeSteppeHorseRanch` name as fallback so 1.4.x builds still compile against older game refs.
+
 ## 1.0.0
 
 First public version, tested with Bannerlord 1.4.8, War Sails 1.2.8, Harmony 2.4.2 and [Camel Armor BM168](https://www.nexusmods.com/mountandblade2bannerlord/mods/4852) 1.0.1.

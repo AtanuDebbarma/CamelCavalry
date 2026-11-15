@@ -54,8 +54,8 @@ Every log line starts with `[CamelCavalry]`. When a campaign loads, the log list
 
 | Dependency | Tested version | Expected to work with |
 |---|---|---|
-| Mount & Blade II: Bannerlord | 1.4.8 | 1.4.x |
-| War Sails (NavalDLC), optional | 1.2.8 | 1.2.x |
+| Mount & Blade II: Bannerlord | 1.5.7 | 1.5.x |
+| War Sails (NavalDLC), optional | 1.3.7 | 1.3.x |
 | [Harmony][harmony] | 2.4.2 | 2.x |
 | [Camel Armor BM168][bm168] | 1.0.1 | 1.0.x |
 
